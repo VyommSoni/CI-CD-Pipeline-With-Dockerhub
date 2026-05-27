@@ -6,7 +6,7 @@ WORKDIR /app
 
 
 #Copy the cureent directory contents into tthe container at /app
-COPY ./app
+COPY . .
 
 # Install any needed packages specified in reuiqrements.txt
 RUN pip install 
@@ -16,6 +16,6 @@ RUN pip install
 EXPOSE 5000
 
 #Run app.py when the container launches
-CMD ["python"]
+CMD ["python","app.py"]
 
 
