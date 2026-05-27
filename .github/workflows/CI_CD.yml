@@ -7,7 +7,7 @@ on : #trigger the workflow when
         branches : [ master ]
 
 jobs:
-    build-and-test: # unit testing 
+    build-and-test: # unit testting 
      runs-on: ubuntu-latest
 
      steps:
@@ -50,6 +50,7 @@ jobs:
           uses : docker/build-push-action@v4
           with:
             context: .
+            file : ./Dockerfile
             push: true
             tags:  ${{ secrets.DOCKER_USERNAME }}/flasktest-app:latest
 

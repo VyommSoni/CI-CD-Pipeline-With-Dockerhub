@@ -9,7 +9,7 @@ WORKDIR /app
 COPY . .
 
 # Install any needed packages specified in reuiqrements.txt
-RUN pip install 
+RUN pip install flask
 
 #make port 5000 to available to the worl outside  this container
 
