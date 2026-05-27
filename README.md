@@ -1,1 +1,1 @@
-# CI/CD Pipeline with using Dockerhub ! #
+# CI/CD Pipeline with using Dockerhub  #
